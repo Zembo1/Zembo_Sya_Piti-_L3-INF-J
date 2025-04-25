@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Authentification</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<style type="text/css">
+		body{
+			font-family: Arial, sans-serif;
+            background-color: #f0fff0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        p{
+        	text-align: center;
+        }
+        a{
+        	text-align: center;
+        	padding-left: none;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: none;
+        }
+        input[type="text"], input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+	</style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Connexion</h2>
+    <form action="apropos.html" id="loginForm" onsubmit="return validateForm()">
+        <label for="username">Nom d'utilisateur :</label><br>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Se connecter">
+        <p>Avez-vous pas un compte?<a href="inscription.html">Créer un compte</a></p>
+    </form>
+</div>
+
+
+</body>
+</html>
